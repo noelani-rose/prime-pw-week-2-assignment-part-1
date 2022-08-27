@@ -76,8 +76,10 @@ else{
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 let mostPets;
-
-
+if(pets === 3 && friendsPets == 2){
+    mostPets = pets;
+}
+console.log(mostPets);
 
 
 
