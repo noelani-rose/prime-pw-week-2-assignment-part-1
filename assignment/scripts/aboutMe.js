@@ -37,12 +37,13 @@ friendsPets += 2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
-console.log(allowedPets);
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
 if(adventurous == true){
-    console.log('Adventures are great!');
+  console.log('Adventures are great!');
+}
+else {console.log('How about we stay home?');
 }
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
@@ -50,6 +51,7 @@ if(adventurous == true){
 if(luckyNumber == 2 && adventurous == true){
     console.log('Roll the dice!');
 }
+
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -73,6 +75,11 @@ else{
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+let mostPets;
+
+
+
+
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -80,7 +87,25 @@ else{
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+const luckynum = 3;
+switch (luckyNumber) {
+    case 1:
+        console.log('First is the worst');
+        break;
+    case 2:
+        console.log('Second is the best');
+        break;
+    case 3:
+        console.log('Third is the one with the polka dot dress');
+        break;
+    default:
+        console.log('Luck is what happens when preparation meets opportunity');
+}
+
+
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-
+let result = 
+    (adventurous == true) ? "Adventures are great!" : "How about we stay home?"
+console.log(result);
 
