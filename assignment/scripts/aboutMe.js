@@ -90,7 +90,7 @@ console.log(mostPets);
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 const luckynum = 3;
-switch (luckyNumber) {
+switch (luckynum) {
     case 1:
         console.log('First is the worst');
         break;
