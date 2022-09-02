@@ -1,13 +1,13 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = 'Noelani ';
+let firstName = 'Noelani';
 
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'West';
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = firstName + lastName
+let fullName = firstName + ' ' + lastName
 
 // 4 - Console log the value of `fullName`
 console.log(fullName)
@@ -33,7 +33,7 @@ let pets = 3;
 let friendsPets = 0;
 
 // 11 - Add two pets to your `pets` variable
-friendsPets += 2;
+pets += 2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
@@ -60,9 +60,9 @@ if(luckyNumber == 2 && adventurous == true){
 // if the value of `pets` is greater than the value of `allowedPets`.
 if(pets < allowedPets){
     console.log('I can have more pets!');
-    if(pets == allowedPets){
-        console.log('I have enough pets');
-    }
+}
+else if (pets === allowedPets){
+    console.log('I have enough pets');
 }
 else{
     console.log('Oh no, I have too many pets!');
@@ -76,9 +76,13 @@ else{
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 let mostPets;
-if(pets === 3 && friendsPets == 2){
+if(pets > friendsPets){
     mostPets = pets;
 }
+else if (pets === friendsPets){
+    mostPets = pets;
+}
+else {mostPets = friendsPets}
 console.log(mostPets);
 
 
